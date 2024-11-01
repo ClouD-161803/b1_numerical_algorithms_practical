@@ -1,14 +1,10 @@
 % Monte Carlo Pi Estimation
+clc; clear; close all;
 
-num_of_num_samples = 100;
+num_of_num_samples = 1000;
 lower_bound = 1000;
 upper_bound = 1000000;
-num_samples = linspace(lower_bound, upper_bound, num_of_num_samples);
-estimated_pi = zeros(size(num_samples));
 
-for idx = 1:length(num_samples)
-    N = round(num_samples(idx));
-    estimated_pi(idx) = montecarlo(N);
-end
+estimated_pi = estimate_pi(num_of_num_samples, lower_bound, upper_bound, @montecarlo);
 
-plot_results(num_samples, estimated_pi);
+plot_results(linspace(lower_bound, upper_bound, num_of_num_samples), estimated_pi);

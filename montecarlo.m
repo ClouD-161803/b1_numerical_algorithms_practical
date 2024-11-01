@@ -1,6 +1,6 @@
 function pi_est = montecarlo(num_samples)
-    
-    rng('state', 0);
+
+    rng('default');
 
     x = rand(1, num_samples);
     y = rand(1, num_samples);
@@ -14,5 +14,5 @@ function pi_est = montecarlo(num_samples)
 
     pi_est = 4 * count / num_samples;
 
-    disp(['Estimated value of pi: ', num2str(pi_est)]);
+    % disp(['Estimated value of pi: ', num2str(pi_est)]);
 end
