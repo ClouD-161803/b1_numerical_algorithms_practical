@@ -1,6 +1,6 @@
 function pi_est = montecarlo(num_samples)
 
-    rng('default');
+    % rng('default');
 
     x = rand(1, num_samples);
     y = rand(1, num_samples);
