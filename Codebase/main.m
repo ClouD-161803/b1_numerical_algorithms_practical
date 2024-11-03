@@ -12,19 +12,19 @@ if method == 1
     upper_bound = 1000000;
 elseif method == 2
     estimation_method = @bisection;
-    num_of_num_samples = 100;
+    num_of_num_samples = 10;
     lower_bound = 1;
-    upper_bound = 100;
+    upper_bound = 10;
 elseif method == 3
     estimation_method = @newton_raphson;
-    num_of_num_samples = 100;
+    num_of_num_samples = 10;
     lower_bound = 1;
-    upper_bound = 100;
+    upper_bound = 10;
 elseif method == 4
     estimation_method = @ramanujan;
-    num_of_num_samples = 100;
+    num_of_num_samples = 10;
     lower_bound = 1;
-    upper_bound = 100;
+    upper_bound = 10;
 else
     error('Invalid selection. Please choose 1, 2, 3, or 4.');
 end
