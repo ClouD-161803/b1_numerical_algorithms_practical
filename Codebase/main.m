@@ -16,12 +16,12 @@ elseif method == 2
     lower_bound = 1;
     upper_bound = 100;
 elseif method == 3
-    estimation_method = @newton_raphson_pi;
+    estimation_method = @newton_raphson;
     num_of_num_samples = 100;
     lower_bound = 1;
     upper_bound = 100;
 elseif method == 4
-    estimation_method = @ramanujan_pi;
+    estimation_method = @ramanujan;
     num_of_num_samples = 100;
     lower_bound = 1;
     upper_bound = 100;
