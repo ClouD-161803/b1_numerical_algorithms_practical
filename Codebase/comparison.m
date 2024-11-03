@@ -2,9 +2,9 @@
 clc; clear; close all;
 
 % Parameters
-num_of_num_samples = 100;
+num_of_num_samples = 10;
 lower_bound = 1;
-upper_bound = 100;
+upper_bound = 10;
 samples = linspace(lower_bound, upper_bound, num_of_num_samples);
 
 % Methods
@@ -20,13 +20,13 @@ for m = 1:length(methods)
         N = round(samples(idx));
         if m == 1
             % Monte Carlo method
-            num_samples = N * 1000;
+            num_samples = N * 10000;
             pi_est = estimation_method(num_samples);
         else
             % Other methods
             pi_est = estimation_method(N);
         end
-        errors(idx, m) = abs(pi_est - pi);
+        errors(idx, m) = pi_est - pi;
     end
 end
 
