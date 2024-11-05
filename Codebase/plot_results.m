@@ -13,7 +13,7 @@ function plot_results(num_samples, estimated_pi)
     xlabel('Number of Samples');
     ylabel('Error');
     title('Pi Estimation Error');
-    legend('Error from Pi');
+    legend('Motecarlo');
     grid on;
     hold off;
 end
