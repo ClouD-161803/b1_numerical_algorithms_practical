@@ -1,0 +1,1 @@
+evaluate_montecarlo_accuracy(linspace(100000, 100000000, 1000))
