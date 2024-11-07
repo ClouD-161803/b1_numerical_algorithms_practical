@@ -26,7 +26,7 @@ function plot_results(num_samples, estimated_pi)
     
     xlabel('Number of Samples');
     ylabel('Error');
-    legend('Monte Carlo error from \pi', '1\sigma Region');
+    legend('Monte Carlo error from \pi', '1\sigma region', '3\sigma region');
     grid on;
     hold off;
 end
