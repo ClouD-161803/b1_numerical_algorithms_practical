@@ -24,6 +24,7 @@ function plot_results(num_samples, estimated_pi)
         line([num_samples(i), num_samples(i)], [0, errors(i)], 'Color', 'b', 'LineStyle', '-');
     end
     
+    ylim([-0.05, 0.05]);
     xlabel('Number of Samples');
     ylabel('Error');
     legend('Monte Carlo error from \pi', '1\sigma region', '3\sigma region');
